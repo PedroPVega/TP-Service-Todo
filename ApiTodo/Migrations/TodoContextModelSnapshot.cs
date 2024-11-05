@@ -18,18 +18,17 @@ namespace ApiTodo.Migrations
 
             modelBuilder.Entity("Todo", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<bool>("Completed")
+                    b.Property<bool?>("Completed")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime?>("Deadline")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Task")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");

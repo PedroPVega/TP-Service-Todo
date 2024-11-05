@@ -1,5 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
-SeedData.Init();
+// SeedData.Init();
+// SeedData.EraseTodos();
+// SeedData.PrintTodos();
+
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
